@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tetris, javascript gaming tetriminos">
+    <title>Tetris JS | Tetris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- navigation elements for users to access instructions, rules and scoring -->
+    <nav class="navBar">
+        <div class="brandLogo">
+            <a href="index.html" aria-label="Return the user to the top of the home page">
+                <h2>Tetris JS</h2>
+            </a>
+        </div>
+        <a href="#" class="toggleButton">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <div class="navBar__links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="instructions.html">Instructions</a></li>
+                <li><a class="active" href="tetris.html">Play Tetris</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Game area -->
+    <div class="gameArea">
+        <h2 hidden> main game grid area</h2>
+        <div class="panels">
+            <div class="box leftSide">
+                <div class="boxContent">
+                    <div class="score unBtn">Score:<span id="score">0</span></div>
+                    <div class="level unBtn">Level:<span id="level">1</span></div>
+                    <div class="lines unBtn">Lines:<span id="lines">0</span></div>
+                    <button id="play" class="score Btn">Music Off</button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="boxContent">
+                    <!-- Manually create Tetris Grid -->
+                    <div class="grid">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                        <div class="taken"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sideBox2">
+                <div class="boxContent">
+                    <div class="controls">
+                        <span class="keys">
+                            <button id="rotate" class="controlBtn"
+                                aria-label="This button will rotate the Tetrimino piece by 90 degrees clockwise">Rotate</button>
+                        </span>
+                        <span class="keys">
+                            <button id="left" class="controlBtn"
+                                aria-label="This button will move the Tetrimino piece left">Left</button>
+                        </span>
+                        <span class="keys">
+                            <button id="right" class="controlBtn"
+                                aria-label="This button will move the Tetrimino piece right">Right</button>
+                        </span>
+                        <span class="keys">
+                            <button id="down" class="controlBtn"
+                                aria-label="This button will move the Tetrimino piece down">Down</button>
+                        </span>
+                    </div>
+                    <button id="start-button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
