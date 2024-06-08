@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="tetris, javascript gaming tetriminos">
     <title>Tetris JS | Tetris</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,9 +21,9 @@
             </a>
         </div>
         <a href="#" class="toggleButton">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </a>
         <div class="navBar__links">
             <ul>
@@ -32,20 +35,21 @@
     </nav>
 
     <!-- Game area -->
-    <div class="gameArea">
+    <section class="gameArea">
         <h2 hidden> main game grid area</h2>
         <div class="panels">
-            <div class="box leftSide">
-                <div class="boxContent">
-                    <div class="score unBtn">Score:<span id="score">0</span></div>
-                    <div class="level unBtn">Level:<span id="level">1</span></div>
-                    <div class="lines unBtn">Lines:<span id="lines">0</span></div>
-                    <button id="play" class="score Btn">Music Off</button>
+            <div class="box sidebox1">
+                <div class="box-content">
+                    <div class="score un-btn">Score : <span id="score">0</span> </div>
+                    <div class="score un-btn">Lines : <span id="lines">0</span> </div>
+                    <div class="score un-btn">Level : <span id="levels">0</span> </div>
+                    <button id="play" class=" score Button">Music Off </button>
                 </div>
             </div>
+
             <div class="box">
-                <div class="boxContent">
-                    <!-- Manually create Tetris Grid -->
+                <div class="box-content">
+
                     <div class="grid">
                         <div></div>
                         <div></div>
@@ -146,6 +150,107 @@
                         <div></div>
                         <div></div>
                         <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
                         <div class="taken"></div>
                         <div class="taken"></div>
                         <div class="taken"></div>
@@ -159,7 +264,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sideBox2">
+            <div class="box sideBox2">
                 <div class="boxContent">
                     <div class="controls">
                         <span class="keys">
@@ -179,11 +284,31 @@
                                 aria-label="This button will move the Tetrimino piece down">Down</button>
                         </span>
                     </div>
-                    <button id="start-button"></button>
+                    <button id="start-button" class="Button"
+                        aria-label="This button will start the game and pause the game">Start Game</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- Footer section for social links, copyright information -->
+    <footer>
+        <a href="#top" class="arrowTop" aria-label="Return to the top of the page">
+            <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+        <p>Copyright <span>&copy;</span>2024 | Hermit's Log | Privacy Policy | Terms and Conditions</p>
+        <p> Attribution:
+            <a
+                href="https://freemusicarchive.org/music/Crisopa/Medicamentosa/addsensor009_Medicamentosa_03_Tetris_triste/"><b>Tetris
+                    Triste</b> by <b>Crisopa</b> <a href="https://freemusicarchive.org/">(Free Music Archive)</a> and
+                license type <a href="https://creativecommons.org/licenses/by-nc-sa/3.0">(CC BY-NC-SA)</a></a>
+        </p>
+    </footer>
+    <!-- Audio files -->
+    <audio src="audio/Crisopa - Tetris triste.mp3" id="music" aria-label="Theme song for tetris game">If you are seeing
+        this, then this means that your browser doesn't suppor the audio element</audio>
+    <!-- Custom JS and Fontawesome -->
+    <script src="script.js"></script>
+
 </body>
 
 </html>
